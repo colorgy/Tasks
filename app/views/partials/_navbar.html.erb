@@ -19,7 +19,7 @@
               </a>
             </li>
             <li class="register-login-btn">
-              <%= link_to "註冊 / 登入", user_omniauth_authorize_path(:colorgy) %>
+              <%= link_to "註冊 / 登入", 'https://colorgy.io' %>
             </li>
           </ul>
           <ul class="side-nav" id="mobile-demo">
@@ -40,7 +40,7 @@
             </li>
             <% if current_user %>
             <% else %>
-              <li><%= link_to "註冊 / 登入", user_omniauth_authorize_path(:colorgy) %></li>
+              <li><%= link_to "註冊 / 登入", 'https://colorgy.io' %></li>
             <% end %>
           </ul>
           <div class="clear" style="clear:both;"></div>
