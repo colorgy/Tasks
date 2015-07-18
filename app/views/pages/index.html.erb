@@ -5,7 +5,7 @@
 		<p>搶先體驗專屬學生的接任務賺外快服務</p>
 	</div>
 	<div class="header-call-to-action">
-    	<a href="https://colorgy.io/login" class="btn btn--large">立即註冊 / 登入</a>
+    	<%= link_to "註冊 / 登入", user_omniauth_authorize_path(:colorgy), :class=>'btn btn--large' %>
     	<!--<p><div class="fb-page" data-href="https://www.facebook.com/pages/Colorgy/1529686803975150" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="true" data-show-posts="false"></div></p>-->
 	</div>
 	<div class="row row-inner-s" style="margin-top: 48px;">
@@ -60,7 +60,7 @@
 						辛苦的解完任務，發案者將依照他當初在發案時所提及的報酬給你，當然，任務結束之後別忘了互相給對方一次好的評價唷！這有助於雙方之後接案發案。</br></br>
 					</p>
 					<div class="call-to-action">
-						<a href="https://colorgy.io/login" class="btn">立即註冊</a>
+						<%= link_to "註冊 / 登入", user_omniauth_authorize_path(:colorgy), :class=>'btn' %>
 					</div>
 				</div>
 			</div>
@@ -78,7 +78,7 @@
 			<div class="col m12 s12">
 				<h4>免費註冊登入</h4>
 				<p>今年八月 Tasks 將正式推出，邀請您搶先註冊，讓我們在服務開通時能優先通知你，也讓你優先取得外快任務。</p>
-				<a href="https://colorgy.io/login" class="btn btn--extralarge">註冊 / 登入</a>
+				<%= link_to "註冊 / 登入", user_omniauth_authorize_path(:colorgy), :class=>'btn btn--extralarge' %>
 		        <p><div class="fb-page" data-href="https://www.facebook.com/pages/Colorgy/1529686803975150" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="true" data-show-posts="false"></div></p>
 			</div>
 		</div>
@@ -91,35 +91,6 @@
 				<h4>全台灣超過<span> 60 個系會</span> 跟 Colorgy 合作</h4>
 				<p>強烈徵求各大學系會與我們合作，和我們ㄧ起努力，讓大學生活越來越便利！<br>如果需要任何Colorgy的服務，也歡迎聯繫，讓我們了解你的需求！</p>
 				<a href="https://www.facebook.com/pages/Colorgy/1529686803975150" target="_blank"><button class="btn" style="margin-top: 24px;">聯絡 Colorgy</button></a>
-				<!--
-				<div class="departments isotope">
-					<div class="grid-sizer"></div>
-					<div class="element-item department-item">
-						<div class="department-logo">
-							<%= image_tag('departments/ncku-cs.jpg') %>
-						</div>
-						<p class="department-name"></p>
-					</div>
-					<div class="element-item department-item">
-						<div class="department-logo">
-							<%= image_tag('departments/ncku-ba.jpg') %>
-						</div>
-						<p class="department-name"></p>
-					</div>
-					<div class="element-item department-item">
-						<div class="department-logo">
-							<%= image_tag('departments/ncku-es.jpg') %>
-						</div>
-						<p class="department-name"></p>
-					</div>
-					<div class="element-item department-item">
-						<div class="department-logo">
-							<%= image_tag('departments/ncku-me.jpg') %>
-						</div>
-						<p class="department-name"></p>
-					</div>
-				</div>
-				-->
 				<div class="departments isotope">
 					<div class="departments-list element-item">
 						<h5>台科大</h5>

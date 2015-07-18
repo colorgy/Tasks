@@ -19,9 +19,7 @@
               </a>
             </li>
             <li class="register-login-btn">
-              <a href="https://colorgy.io/login">
-                註冊 / 登入
-              </a>
+              <%= link_to "註冊 / 登入", user_omniauth_authorize_path(:colorgy) %>
             </li>
           </ul>
           <ul class="side-nav" id="mobile-demo">
@@ -40,7 +38,7 @@
                 其他 Colorgy 服務
               </a>
             </li>
-            <li><a href="#">登入</a></li>
+            <li><%= link_to "註冊 / 登入", user_omniauth_authorize_path(:colorgy) %></li>
           </ul>
           <div class="clear" style="clear:both;"></div>
         </div>
