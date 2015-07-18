@@ -38,7 +38,10 @@
                 其他 Colorgy 服務
               </a>
             </li>
-            <li><%= link_to "註冊 / 登入", user_omniauth_authorize_path(:colorgy) %></li>
+            <% if current_user %>
+            <% else %>
+              <li><%= link_to "註冊 / 登入", user_omniauth_authorize_path(:colorgy) %></li>
+            <% end %>
           </ul>
           <div class="clear" style="clear:both;"></div>
         </div>
