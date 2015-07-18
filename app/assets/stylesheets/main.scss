@@ -234,9 +234,9 @@ i{
 // ---------
 
 header{
-	background-image: image-url('bg3.jpg');
+	background-image: image-url('bg1.jpg');
 	background-size: cover;
-	background-position: center;
+	background-position: top;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	min-height: 700px;
@@ -250,7 +250,7 @@ header{
 		right: 0;
 		left: 0;
 		bottom: 0;
-		background-color: rgba(10,10,10, .7);
+		background-color: rgba(105, 24, 42, 0.4);
 	}
 
 	> .header-slogan{
@@ -352,6 +352,13 @@ header{
 	color: #464646;
 	margin: 8px;
 	padding: 16px 8px 24px 8px;
+
+	> .service-icon{
+		> i{
+			font-size: 32px !important;
+			color: $primary-color;
+		}
+	}
 
 	> h4 {
 		color: rgb(50, 160, 139);
@@ -552,7 +559,7 @@ header{
 				content: " ";
 				width: 29px;
 				height: 4px;
-				background: #07c0a1;
+				background: $primary-color;
 				position: absolute;
 				top: -20px;
 				left: 0px;
@@ -584,7 +591,7 @@ header{
 }
 
 .cooperating-departments{
-	background-color: $darker-gray;
+	background-color: $dark-gray;
 	padding: 80px 0;
 	text-align: center;
 
